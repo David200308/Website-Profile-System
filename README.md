@@ -11,7 +11,10 @@
 
 ## Functions
 
-- Searching a Website by Category
+- Searching a Website
+  - by Name
+  - by Category
+  - by Object
 - Add New Website
 - List all Websites
 
