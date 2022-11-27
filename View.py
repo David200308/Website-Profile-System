@@ -4,7 +4,7 @@ import os
 def mainPage():
     print("-" * 32)
     print()
-    print("    WELCOME TO WEBSITE SYSTEM    ")
+    print("WELCOME TO WEBSITE PROFILE SYSTEM")
     print()
     print("-" * 32)
     print("[1]. List all the website")
