@@ -1,6 +1,6 @@
 # Website Profile System
 
-> ### A System can Track theLinks and Profiles with Database -> Track Link, Category, Object, also can add the website
+> ### A System can Track the Links and Profiles with Database -> Track Link, Category, Object, also can add the website
 
 ## Programming Language
 
