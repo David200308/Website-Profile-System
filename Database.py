@@ -25,3 +25,28 @@ def database(queryStr):
 
     cursor.close()
     cnx.close()
+
+
+def displayAllInfo(queryStr):
+    cnx = mysql.connector.connect(user='root', 
+                                    password='',
+                                    host='127.0.0.1',
+                                    database='WEBSITE')
+    cursor = cnx.cursor()
+
+    query = (queryStr)
+
+    cursor.execute(query)
+
+    if (query.split(" ")[0] == "SELECT"):
+        table = PrettyTable(['Name', 'Link', 'Category', 'Object'])
+        for (WEBSITE_NAME, LINK, CATEGORY, OBJECT) in cursor:
+            table.add_row([WEBSITE_NAME, LINK, CATEGORY, OBJECT])
+
+        print(table)
+    if (query.split(" ")[0] == "INSERT"):
+        cnx.commit()
+        print("Website Inserted")
+
+    cursor.close()
+    cnx.close()
